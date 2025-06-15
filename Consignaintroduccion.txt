@@ -1,0 +1,54 @@
+Introducción a la analítica empresarial 2025
+Desarrollo de un modelo de clasificación para predecir ausencias a citas médicas
+
+
+Overview
+En esta competencia se va a trabajar con datos reales de una clínica, que busca reducir las pérdidas asociadas a pacientes que no se presentan a sus citas médicas (no-shows).
+
+El objetivo será construir un modelo de clasificación que prediga si un paciente asistirá o no a su turno, utilizando variables como edad, género, condiciones médicas y si recibió un recordatorio por SMS.
+
+Los modelos serán evaluados en base al F1-score para la clase Yes (no-show).
+
+¡Buena suerte!
+
+Start
+
+11 days ago
+Close
+5 days to go
+Description
+Sobre el problema
+Las inasistencias a turnos médicos programados generan costos operativos, pérdida de tiempo del personal de salud y baja eficiencia en la atención. En esta competencia, van a trabajar con un conjunto de datos reales de más de 100.000 citas médicas registradas en una clínica.
+
+Objetivo
+Construir un modelo de clasificación binaria que, a partir de información disponible al momento de agendar una cita médica, prediga si el paciente no asistirá a su turno (No-show = Yes)
+
+Consideraciones técnicas
+La variable a predecir es No-show.
+
+Es un problema de clasificación binaria.
+
+El modelo será evaluado usando el F1-score para la clase Yes.
+
+¿Por qué es importante?
+Las ausencias a turnos médicos generan pérdida de ingresos, tiempos ociosos y menor eficiencia en la atención. Contar con un modelo que anticipe estas inasistencias permite a la clínica optimizar recursos, reorganizar su agenda y mejorar la atención a otros pacientes.
+
+Evaluation
+Los modelos serán evaluados utilizando el F1-score para la clase Yes, que representa a los pacientes que no se presentan a su cita médica.
+
+Nos enfocamos en la clase Yes porque el objetivo es identificar correctamente las ausencias para poder tomar medidas preventivas.
+
+Entrega
+El archivo de entrega debe ser un CSV con el siguiente formato:
+
+AppointmentID,No-show
+5604678,Yes
+5621351,Yes
+5686829,Yes
+…
+
+AppointmentID debe coincidir con los IDs del dataset response.csv.
+
+No-show debe contener únicamente los valores "Yes" o "No" (respetando mayúsculas/minúsculas).
+
+El archivo debe incluir una fila de encabezado.
